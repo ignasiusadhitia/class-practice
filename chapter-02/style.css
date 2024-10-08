@@ -3,6 +3,7 @@
   --text-white: #fff;
   --bg-primary: #4caf50;
   --bg-secondary: #f5f5f5;
+  --bg-ivory: #fbfbfb;
   --bg-white: #fff;
   --bg-dark: #333;
   --border-bottom: 5px solid #388e3c;
@@ -85,6 +86,10 @@ section {
   padding: 24px 24px 36px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+}
+
+#portfolio-section {
+  background-color: var(--bg-ivory);
 }
 
 .portfolio-card {
