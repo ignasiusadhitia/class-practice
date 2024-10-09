@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --text-dark: #414141;
+  --text-light: #5e5b5b;
+  --text-black: #000;
+  --text-white: #fff;
+
+  --bg-dark: #414141;
+  --bg-white: #fff;
+
+  --border-black: 3px solid #000;
+  --border-transparent: 3px solid transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: var(--text-light);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 4.7rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 0.9rem;
+  line-height: 2.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-black);
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Navigation */
+header {
+  width: 100%;
+  position: fixed;
+  background-color: var(--bg-white);
+  z-index: 100;
+}
+
+header nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+header .menu-wrapper .active,
+header .menu-wrapper .menu-item {
+  width: 36px;
+  height: 4px;
+  cursor: pointer;
+}
+
+header .menu-wrapper .active {
+  border-bottom: var(--border-black);
+}
+
+header .menu-wrapper .menu-item {
+  border-bottom: var(--border-transparent);
+}
+
+header .menu-wrapper .menu-item:hover {
+  border-bottom: var(--border-black);
+}
+
+/* Hero Section */
+#hero {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero p {
+  font-size: 0.9rem;
+}
+
+/* Services Section */
+#services {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+#services p {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+#services .image-wrapper {
+  position: relative;
+}
+
+#services .image-wrapper button {
+  position: absolute;
+  right: 65px;
+  top: 26px;
+  border-radius: 0 8px 0 0;
+  background-color: var(--bg-white);
+  font-weight: normal;
+}
+
+#services .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Our Customers Section */
+#our-customers .wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#our-customers .icons-wrapper {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+#our-customers .icons-wrapper img {
+  height: 88px;
+}
+
+/* Carreers Section */
+#careers .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+#careers .wrapper h2,
+#careers .wrapper p {
+  color: var(--text-black);
+}
+
+#careers .wrapper p {
+  font-size: 0.9rem;
+}
+
+#careers .wrapper button {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+}
+
+/* Contact Section */
+#contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+#contact h3 {
+  margin-bottom: 28px;
+}
+
+#contact .location-title {
+  margin-left: 100px;
+}
+
+#contact li {
+  font-weight: 600;
+}
+
+#company li {
+  margin-left: 14px;
+  list-style-type: "- ";
+}
+
+#company .company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#contact-us .contact-us-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--text-dark);
+}
