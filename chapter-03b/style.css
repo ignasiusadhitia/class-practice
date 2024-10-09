@@ -20,6 +20,7 @@
 }
 
 .navbar {
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   box-shadow: 1px 6px 6px -4px rgba(0, 0, 0, 0.1);
