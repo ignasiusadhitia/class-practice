@@ -12,13 +12,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
 :root {
   --text-dark: #414141;
   --text-light: #5e5b5b;
@@ -26,10 +19,13 @@
   --text-white: #fff;
 
   --bg-dark: #414141;
+  --bg-light: #f8f8f8;
   --bg-white: #fff;
 
   --border-black: 3px solid #000;
   --border-transparent: 3px solid transparent;
+
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 * {
@@ -58,6 +54,7 @@ h1 {
 
 h2 {
   font-size: 2.3rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -83,7 +80,7 @@ button {
   width: 150px;
   height: 50px;
   border: none;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   font-size: 1.2rem;
 }
@@ -99,6 +96,7 @@ header {
   position: fixed;
   background-color: var(--bg-white);
   z-index: 100;
+  box-shadow: var(--box-shadow);
 }
 
 header nav {
@@ -138,6 +136,7 @@ header .menu-wrapper .menu-item:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bg-light);
 }
 
 #hero p {
@@ -148,6 +147,7 @@ header .menu-wrapper .menu-item:hover {
 #services {
   width: 1000px;
   margin: 0 auto;
+  padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
@@ -178,6 +178,10 @@ header .menu-wrapper .menu-item:hover {
 }
 
 /* Our Customers Section */
+#our-customers {
+  padding: 50px 0;
+}
+
 #our-customers .wrapper {
   display: flex;
   justify-content: center;
@@ -196,6 +200,10 @@ header .menu-wrapper .menu-item:hover {
 }
 
 /* Carreers Section */
+#careers {
+  padding: 50px 0;
+}
+
 #careers .wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -209,6 +217,10 @@ header .menu-wrapper .menu-item:hover {
   color: var(--text-black);
 }
 
+#careers .wrapper h2 {
+  margin-bottom: 0;
+}
+
 #careers .wrapper p {
   font-size: 0.9rem;
 }
@@ -218,8 +230,26 @@ header .menu-wrapper .menu-item:hover {
   color: var(--text-white);
 }
 
+#careers .image-wrapper {
+  display: flex;
+  flex-direction: flex-end;
+  margin-top: 1.5rem;
+}
+
+#careers .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#careers .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* Contact Section */
 #contact {
+  padding: 50px 0 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
@@ -256,10 +286,11 @@ header .menu-wrapper .menu-item:hover {
 
 /* Footer */
 footer {
-  height: 100px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   color: var(--text-dark);
+  box-shadow: var(--box-shadow);
 }
