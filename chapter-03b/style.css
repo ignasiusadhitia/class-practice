@@ -15,8 +15,15 @@
   font-weight: 200;
 }
 
+:root {
+  --text-primary: #414141;
+  --text-secondary: #9f9f9f;
+  --bg-primary: #4a4a4a;
+}
+
 * {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -49,9 +56,12 @@
 }
 
 .header {
+  height: 86vh;
+}
+
+.display-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 86vh;
 }
 
 .header-img {
@@ -71,14 +81,127 @@
   font-size: 4.5rem;
   line-height: 1.2;
   font-weight: 600;
-  color: #414141;
+  color: var(--text-primary);
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.header-content p {
+.header-text p {
   font-size: 0.9rem;
   color: #9f9f9f;
   line-height: 1.5;
   margin: 0;
+  font-weight: 200;
+  padding-right: 200px;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0px;
+  line-height: 1.2;
+}
+
+.desc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.customer-section {
+  display: flex;
+  align-items: center;
+}
+
+.customer-section h2 {
+  margin-bottom: 20px;
+}
+
+.small-container {
+  padding: 0 15%;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.company-logo {
+  height: 60px;
+  width: 150px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.service-card {
+  position: relative;
+  background: url("assets/images/laptop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.service-card h2,
+.service-card p {
+  color: white;
+}
+
+.service-content {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  text-align: right;
+}
+
+.button {
+  background: var(--bg-primary);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.service-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--bg-primary);
+}
+
+.contact-form {
+  padding-left: 20px;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--bg-primary);
+}
+
+.section-gap {
+  margin-top: 30px;
 }
