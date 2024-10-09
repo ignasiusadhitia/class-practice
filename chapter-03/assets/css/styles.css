@@ -131,12 +131,15 @@ header .menu-wrapper .menu-item:hover {
 }
 
 /* Hero Section */
+.hero-wrapper {
+  background-color: var(--bg-light);
+}
+
 #hero {
   padding-top: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-light);
 }
 
 #hero p {
