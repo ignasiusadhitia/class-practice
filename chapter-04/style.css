@@ -1,0 +1,38 @@
+body {
+  background-color: #26335d;
+}
+
+.img-cstm {
+  width: 65%;
+}
+
+.icon-size-cstm {
+  font-size: 72px;
+}
+
+.line-sm-cstm {
+  width: 70px;
+  height: 2px;
+  background-color: #e74040;
+}
+
+.line-md-cstm {
+  width: 70px;
+  height: 5px;
+  background-color: #e74040;
+}
+
+.avatar-cstm {
+  width: 60px;
+  height: 60px;
+}
+
+.btn-cstm {
+  padding: 14px 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .img-cstm {
+    width: 100%;
+  }
+}
