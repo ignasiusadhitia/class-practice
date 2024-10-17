@@ -51,21 +51,30 @@ function displayUsers(users) {
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
 
-if (page === 1) {
-  prevButton.classList.add("disabled");
-}
-
-function navigate(nav) {
+function updatePrevButtonState() {
   if (page === 1) {
     prevButton.classList.add("disabled");
+    prevButton.setAttribute("disabled", true);
+  } else {
+    prevButton.classList.remove("disabled");
+    prevButton.removeAttribute("disabled");
   }
+}
 
+updatePrevButtonState();
+
+function navigate(nav) {
   if (nav === "next") {
     page += 1;
-    prevButton.classList.remove("disabled");
-  } else {
-    page -= 1;
   }
+
+  if (nav === "prev") {
+    if (page > 1) {
+      page -= 1;
+    }
+  }
+
+  updatePrevButtonState();
 
   fetchData();
 }
