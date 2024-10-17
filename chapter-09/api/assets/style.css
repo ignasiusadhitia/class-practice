@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 14px;
+  max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.searchbar {
+  width: 100%;
+  padding: 0 72px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 12px;
+}
+
+button,
+input {
+  height: 36px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+}
+
+input {
+  padding: 12px;
+  color: black;
+  border: 1px solid gray;
+}
+
+button {
+  border: none;
+  background-color: steelblue;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(58, 108, 150);
+}
+
+.card-container {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.text-wrapper {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+.button-wrapper {
+  margin-top: 36px;
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+}
+
+.button-wrapper button {
+  padding: 0 12px;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .searchbar {
+    padding: 0 12px;
+    grid-template-columns: 1fr;
+  }
+}

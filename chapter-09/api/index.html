@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Data</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random User List</h1>
+
+      <div class="searchbar">
+        <input type="text" name="search" id="search" />
+        <button id="search-button" onclick="search()">Search</button>
+      </div>
+
+      <div class="card-container" id="user-container">
+        <!-- card akan ditampilkan di sini -->
+      </div>
+
+      <div class="button-wrapper">
+        <button id="prev-button" onclick="navigate('prev')"><<</button>
+        <button id="next-button" onclick="navigate('next')">>></button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
