@@ -214,3 +214,23 @@ input {
   text-align: center;
   color: white;
 }
+
+.footer-section {
+  padding: 48px 0;
+  background-color: midnightblue;
+  color: white;
+}
+
+.footer-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-item-wrapper .nav-list {
+  flex-direction: column;
+}
+
+.footer-item-wrapper .nav-item {
+  color: white;
+  font-size: 0.8rem;
+}
