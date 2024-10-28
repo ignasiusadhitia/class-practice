@@ -1,0 +1,192 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --border-radius: 4px;
+}
+
+h1,
+h2 {
+  color: crimson;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3,
+h4 {
+  color: midnightblue;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+input {
+  padding: 8px;
+  border-radius: var(--border-radius);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: crimson;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-list-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  font-weight: bold;
+  color: midnightblue;
+}
+
+.nav-item {
+  border-bottom: 3px solid transparent;
+  transform: color 0.2s ease-in-out;
+}
+
+.active,
+.nav-item:hover {
+  color: crimson;
+  border-bottom: 3px solid crimson;
+}
+
+.header {
+  padding: 48px 0;
+  background-color: midnightblue;
+  text-align: center;
+  color: white;
+}
+
+.about-section {
+  padding: 56px 0;
+  background-color: whitesmoke;
+}
+
+.about-inner-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+}
+
+.about-image {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description-wrapper p {
+  font-size: 0.8rem;
+}
+
+.call-card {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+}
+
+.icon-wrapper {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  font-size: 2rem;
+  color: crimson;
+}
+
+.phone {
+  color: crimson;
+  font-weight: bold;
+}
+
+.heading-wrapper {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.leaders-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 36px;
+}
+
+.card-image {
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-name,
+.card-role {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.card-name {
+  color: crimson;
+}
