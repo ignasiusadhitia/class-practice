@@ -169,6 +169,7 @@ input {
 }
 
 .leaders-section {
+  padding-bottom: 48px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 36px;
@@ -189,4 +190,27 @@ input {
 
 .card-name {
   color: crimson;
+}
+
+.card-role {
+  color: midnightblue;
+}
+
+.end-section {
+  padding: 48px 0;
+  margin: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: midnightblue;
+  border-radius: 8px;
+}
+
+.end-section p {
+  padding: 0 56px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
 }

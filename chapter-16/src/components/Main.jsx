@@ -62,11 +62,15 @@ const Main = ({ items }) => {
 
       <Section>
         <div className="container">
-          <p>
-            &quot;Some of the History of Our Company is that we are Catching up
-            through Video&quot;
-          </p>
-          <Button text="Get In Touch" />
+          <div className="end-section">
+            <p>
+              &quot;Some of the History of Our Company is that we are Catching
+              up through Video&quot;
+            </p>
+            <div>
+              <Button text="Get In Touch" />
+            </div>
+          </div>
         </div>
       </Section>
     </main>
