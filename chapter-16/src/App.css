@@ -37,6 +37,11 @@ button {
   padding: 10px 20px;
   border-radius: var(--border-radius);
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(165, 10, 39);
 }
 
 input {
@@ -224,13 +229,36 @@ input {
 .footer-item-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  font-size: 0.8rem;
 }
 
 .footer-item-wrapper .nav-list {
   flex-direction: column;
+  gap: 12px;
+}
+
+.footer-item-wrapper h5 {
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .footer-item-wrapper .nav-item {
   color: white;
-  font-size: 0.8rem;
+  font-weight: normal;
+  border-bottom: none;
+}
+
+.footer-item-wrapper .nav-item:hover {
+  border-bottom: none;
+}
+
+.footer-item-wrapper .about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

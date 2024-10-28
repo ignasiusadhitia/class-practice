@@ -10,15 +10,17 @@ const Footer = ({ items }) => {
     <footer className="footer-section">
       <div className="container footer-item-wrapper">
         <FooterItem title="About Us">
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at
-          </p>
+          <div className="about-us">
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at
+            </p>
 
-          <div>
-            {icons.map((icon, index) => (
-              <Icon iconClassName={icon.iconClassName} key={index} />
-            ))}
+            <div className="icons-group">
+              {icons.map((icon, index) => (
+                <Icon iconClassName={icon.iconClassName} key={index} />
+              ))}
+            </div>
           </div>
         </FooterItem>
 
