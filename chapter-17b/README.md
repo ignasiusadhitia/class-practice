@@ -8,13 +8,16 @@ news-app/
 |   ├── assets/
 │   |   |   └── react.svg
 │   ├── components/
+│   │   ├── Loader.jsx
 │   │   ├── NewsList.jsx
 │   │   └── NewsDetail.jsx
 │   ├── containers/
 │   │   ├── NewsListContainer.jsx
 │   │   └── NewsDetailContainer.jsx
 │   ├── utils/
-│   │   └── api.js
+│   │   ├── api.js
+│   │   ├── dateFormat.js
+│   │   └── regex.js
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.js
