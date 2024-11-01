@@ -13,9 +13,14 @@ class App extends Component {
   };
 
   handleLogout = () => {
-    logout(this.state.token);
-    this.setState({ token: null });
-    localStorage.removeItem("token");
+    logout(this.state.token)
+      .then(() => {
+        this.setState({ token: null });
+        localStorage.removeItem("token");
+      })
+      .catch((error) => {
+        console.log("Logout failed:", error);
+      });
   };
 
   render() {
