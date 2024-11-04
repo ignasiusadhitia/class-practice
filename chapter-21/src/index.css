@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  font-family: "IBM Plex Mono", serif;
+  background-color: rgba(33, 39, 55);
+  color: white;
+}
+
+.container-cstm {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.border-accent-cstm {
+  border-top: 1px solid rgba(255, 107, 1);
+}
+
+.border-bottom-accent-cstm {
+  border-bottom: 1px solid rgba(255, 107, 1);
+}
+
+.text-accent-cstm {
+  color: rgba(255, 107, 1);
+}
+
+.btn-accent-cstm {
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.btn-accent-cstm:hover {
+  color: rgba(255, 107, 1);
+}
+
+i {
+  color: inherit;
+  cursor: pointer;
+}
+
+i:hover {
+  color: rgba(255, 107, 1);
+}
+
+footer i {
+  cursor: pointer;
+}
+
+.fs-6-cstm {
+  font-size: 0.8rem;
+}
+
+.min-vh-75-cstm {
+  min-height: 75vh;
+}
+
+.nav-link-cstm {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-cstm:hover {
+  color: rgba(255, 107, 1);
+}
