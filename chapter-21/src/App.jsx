@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { PostProvider } from "./context/PostContext";
-import MainLayout from "./Layouts/MainLayout";
+import MainLayout from "./layouts/MainLayout";
 import { About, Home, NotFound, PostDetail, Posts, Tags } from "./pages";
 import { tagsList } from "./data/tags";
 
