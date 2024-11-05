@@ -22,7 +22,6 @@ const AuthContainer = ({ setToken }) => {
   }, []);
 
   const toggleLogin = () => {
-    // this.setState({ isLogin: !this.state.isLogin, error: null });
     setIsLogin((prevState) => !prevState);
     setError(null);
   };
