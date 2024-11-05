@@ -27,13 +27,9 @@ function TodoList() {
               className="btn btn-outline-danger btn-sm me-2"
               onClick={() => handleTodoComplete(todo.id)}
             >
-              {todo.completed
-                ? lang === "en"
-                  ? "Uncompleted"
-                  : "Belum Selesai"
-                : lang === "en"
-                ? "Completed"
-                : "Selesai"}
+              {todo.completed &&
+                (lang === "en" ? "Uncompleted" : "Belum Selesai")}
+              {!todo.completed && (lang === "en" ? "Completed" : "Selesai")}
             </button>
             <button
               className="btn btn-outline-danger btn-sm me-2"
