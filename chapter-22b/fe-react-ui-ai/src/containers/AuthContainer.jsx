@@ -17,7 +17,9 @@ const AuthContainer = ({ setToken }) => {
     if (token) {
       setToken(token);
     }
-  });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const toggleLogin = () => {
     // this.setState({ isLogin: !this.state.isLogin, error: null });
