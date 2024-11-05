@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 export default function LoginModal({
@@ -80,3 +81,16 @@ export default function LoginModal({
     </div>
   );
 }
+
+LoginModal.propTypes = {
+  isLogin: PropTypes.bool.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  toggleLogin: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  error: PropTypes.string,
+  loading: PropTypes.bool.isRequired,
+  form: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    password: PropTypes.string.isRequired,
+  }).isRequired,
+};

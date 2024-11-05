@@ -1,8 +1,12 @@
+import PropTypes from "prop-types";
 import React from "react";
 
 export default function ChatInput({ onSubmit, loading, onChange, query }) {
   return (
-    <form onSubmit={onSubmit} className="fixed-bottom p-3 bg-primary-subtle border-top shadow">
+    <form
+      onSubmit={onSubmit}
+      className="fixed-bottom p-3 bg-primary-subtle border-top shadow"
+    >
       <div className="input-group container">
         <input
           type="text"
@@ -19,3 +23,10 @@ export default function ChatInput({ onSubmit, loading, onChange, query }) {
     </form>
   );
 }
+
+ChatInput.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
+  query: PropTypes.string.isRequired,
+};
