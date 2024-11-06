@@ -18,7 +18,6 @@ const BlogList = () => {
   const [pagination, setPagination] = useState({});
 
   const { isLoading, serverError, apiData } = useFetch(
-    // `http://localhost:3000/posts?_page=${initialPage}&_limit=5`
     `/posts?_page=${initialPage}&_per_page=5`
   );
 
