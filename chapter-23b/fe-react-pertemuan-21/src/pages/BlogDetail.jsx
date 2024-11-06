@@ -9,9 +9,7 @@ const BlogDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [post, setPost] = useState(null);
-  const { isLoading, serverError, apiData } = useFetch(
-    `http://localhost:3000/posts/${id}`
-  );
+  const { isLoading, serverError, apiData } = useFetch(`/posts/${id}`);
 
   useEffect(() => {
     if (apiData) {

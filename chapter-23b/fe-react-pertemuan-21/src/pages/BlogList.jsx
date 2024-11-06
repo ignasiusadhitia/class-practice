@@ -19,7 +19,7 @@ const BlogList = () => {
 
   const { isLoading, serverError, apiData } = useFetch(
     // `http://localhost:3000/posts?_page=${initialPage}&_limit=5`
-    `http://localhost:3000/posts?_page=${initialPage}&_per_page=5`
+    `/posts?_page=${initialPage}&_per_page=5`
   );
 
   useEffect(() => {
