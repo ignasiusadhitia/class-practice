@@ -21,8 +21,12 @@ const BlogDetail = () => {
     return <Spinner />;
   }
 
+  if (!post) {
+    return <ErrorMessage text="Ups... Something went wrong" backButton />;
+  }
+
   if (serverError) {
-    return <ErrorMessage text={serverError.message} />;
+    return <ErrorMessage text="Ups... Something went wrong" backButton />;
   }
 
   return (

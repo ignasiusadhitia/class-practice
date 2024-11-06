@@ -31,12 +31,16 @@ const BlogList = () => {
     }
   }, [apiData]);
 
-  if (!posts || isLoading) {
+  if (isLoading) {
     return <Spinner />;
   }
 
+  if (!posts) {
+    return <ErrorMessage text="Ups... Something went wrong" />;
+  }
+
   if (serverError) {
-    return <ErrorMessage text={serverError.message} />;
+    return <ErrorMessage text="Ups... Something went wrong" />;
   }
 
   const handleNextPage = () => {
