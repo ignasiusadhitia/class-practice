@@ -10,7 +10,7 @@ const BlogList = () => {
 
   // Get the current page from the query parameter or default to 1
   const queryParams = new URLSearchParams(location.search);
-  const initialPage = queryParams.get("page") || 1;
+  const initialPage = parseInt(queryParams.get("page")) || 1;
 
   // Get the posts from the JSON server
   const [posts, setPosts] = useState([]);
