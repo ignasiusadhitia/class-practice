@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 
 const ErrorMessage = () => {
@@ -7,10 +6,6 @@ const ErrorMessage = () => {
       <h1>OOOpsss... Something wrong. Try again Later</h1>
     </div>
   );
-};
-
-ErrorMessage.propTypes = {
-  text: PropTypes.string,
 };
 
 export default ErrorMessage;
