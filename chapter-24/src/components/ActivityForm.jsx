@@ -96,11 +96,7 @@ const ActivityForm = ({ showModal, setShowModal, selectedActivity = null }) => {
               <span className="invalid-feedback">{errors.description}</span>
             )}
           </div>
-          <Button
-            type="submit"
-            variant="primary"
-            disabled={isSubmitting || Object.keys(errors).length > 0}
-          >
+          <Button type="submit" variant="primary" disabled={isSubmitting}>
             {isSubmitting
               ? "Submitting..."
               : selectedActivity
