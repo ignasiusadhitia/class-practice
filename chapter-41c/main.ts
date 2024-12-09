@@ -127,7 +127,7 @@ const pointA: Point = {
 */
 
 class BankAccount {
-  private balance: number;
+  private balance: number = 0;
 
   public deposit(amount: number): number {
     return this.balance + amount;
@@ -147,11 +147,11 @@ Lalu buat variabel user dengan properti id: 1 dan name: "Alice".
 */
 
 interface User {
-  id: number;
+  readonly id: number;
   name: string;
 }
 
-let user: Readonly<User> = {
+let user: User = {
   id: 1,
   name: "Alice",
 };
@@ -217,11 +217,12 @@ const managerOfFinance: ManagerOfFinance = {
 
 const person: {
   name: string;
-  street: string;
-  city?: string;
+  address?: {
+    street: string;
+    city: string;
+  };
 } = {
   name: "Jane",
-  street: "Elm Street #13",
 };
 
 /**
